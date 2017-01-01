@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16C63a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="Uniqueuu" customModuleProvider="target">
+            <connections>
+                <outlet property="cameraButton" destination="bty-XL-Mfj" id="cYJ-dr-LP4"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="m0l-IN-XJQ">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T62-z9-2e0">
+                    <items>
+                        <barButtonItem systemItem="camera" id="bty-XL-Mfj">
+                            <connections>
+                                <action selector="cameraButtonAction:" destination="-1" id="Ijh-wa-Erl"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="6Aa-ze-lUH"/>
+                        <barButtonItem title="滤镜" style="plain" id="ssm-uo-fDz">
+                            <connections>
+                                <action selector="filterBtnClick:" destination="-1" id="Red-aS-fjb"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="KQr-k6-nf1"/>
+                        <barButtonItem title="文字" id="7Bc-1a-S2d"/>
+                    </items>
+                </toolbar>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="phonecase" translatesAutoresizingMaskIntoConstraints="NO" id="KFI-x9-z7p">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="375" id="4fm-AH-Zfx"/>
+                        <constraint firstAttribute="width" constant="375" id="a5C-EI-UZ2"/>
+                    </constraints>
+                </imageView>
+                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E2w-U6-lfq"/>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="KFI-x9-z7p" firstAttribute="centerY" secondItem="m0l-IN-XJQ" secondAttribute="centerY" id="9Wp-Sf-qWU"/>
+                <constraint firstItem="KFI-x9-z7p" firstAttribute="centerX" secondItem="m0l-IN-XJQ" secondAttribute="centerX" id="ECE-zZ-VQR"/>
+                <constraint firstItem="E2w-U6-lfq" firstAttribute="leading" secondItem="T62-z9-2e0" secondAttribute="leading" id="Mis-Fu-IIo"/>
+                <constraint firstItem="E2w-U6-lfq" firstAttribute="bottom" secondItem="T62-z9-2e0" secondAttribute="top" id="Unb-NV-PCN"/>
+                <constraint firstAttribute="bottom" secondItem="E2w-U6-lfq" secondAttribute="bottom" constant="44" id="Vlf-UO-fMs"/>
+                <constraint firstAttribute="trailing" secondItem="E2w-U6-lfq" secondAttribute="trailing" id="aAg-W8-sGB"/>
+                <constraint firstItem="E2w-U6-lfq" firstAttribute="leading" secondItem="m0l-IN-XJQ" secondAttribute="leading" id="v8F-uY-xB2"/>
+                <constraint firstItem="E2w-U6-lfq" firstAttribute="trailing" secondItem="T62-z9-2e0" secondAttribute="trailing" id="zjr-NT-t7E"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="phonecase" width="286" height="286"/>
+    </resources>
+</document>
