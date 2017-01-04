@@ -14,8 +14,6 @@ This was my submission for the WWDC 2014 Student Scholarship, which I ended up w
 * All `UITableView`/`UICollectionView`s in the app use XIBs for the cells, dynamically sized using Autolayout with [Mensa](https://github.com/jordanekay/Mensa)
 * It's the first app I've "designed" (if you can call it that) by myself! Shout out to [Sketch](http://bohemiancoding.com/sketch/) for making that easy.
 
-
-![Screenshot2](https://github.com/BBC6BAE9/Uniqueuu/raw/master/Screenshots/2.png)
 ![Screenshot1](https://github.com/BBC6BAE9/Uniqueuu/raw/master/Screenshots/1.png)
 
 
