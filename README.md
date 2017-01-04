@@ -24,7 +24,7 @@
 ### Contact
 
 * Huang Hong
-* [@BBC6BAE9](http://weibo.com/3216118734/profile?rightmod=1&wvr=6&mod=personnumber&is_all=1)
+* [@BBC6BAE9 SinaWeibo](http://weibo.com/3216118734/profile?topnav=1&wvr=6&is_all=1)
 * [我的技术博客](http://blog.csdn.net/huanghuanghonghong)
 
 
