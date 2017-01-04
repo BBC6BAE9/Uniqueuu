@@ -21,14 +21,12 @@ This was my submission for the WWDC 2014 Student Scholarship, which I ended up w
 
 ### 用到的三方框架
 
-Kingfisher
-SVProgressHUD
-FDFullscreenPopGesture
-Alamofire
-SwiftyJSON
-
-
  - [SnapKit](https://github.com/SnapKit/Masonry)：Masony的Swift版本，用于布局
+ - [Kingfisher](https://github.com/onevcat/Kingfisher)：图片下载和缓存
+ - [SVProgressHUD](https://github.com/SVProgressHUD/SVProgressHUD)：HUD用来显示进程
+ - [FDFullscreenPopGesture](https://github.com/forkingdog/FDFullscreenPopGesture)：Fullscreen pop gesture in an iOS7+ system
+ - [Alamofire](https://github.com/Alamofire/Alamofire)：Swift下的AFNetworking
+ - [SwiftyJSON](https://github.com/SwiftyJSON/SwiftyJSON)：在Swift下更容易处理Json数据
  
  
 ### Contact
