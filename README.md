@@ -5,8 +5,7 @@
 ![屏幕截图](https://github.com/BBC6BAE9/Uniqueuu/raw/master/Screenshots/1.png)
 
 
-## WWDC 2014
-
+## 读物 App Swift3.0
 This was my submission for the WWDC 2014 Student Scholarship, which I ended up winning! I had to put this together in a rush while studying for exams so it isn't that great, but I'm happy it got me a spot.
 
 **Details**:
@@ -29,3 +28,4 @@ This was my submission for the WWDC 2014 Student Scholarship, which I ended up w
 ### License
 
 The code is licensed under the MIT license, but all design assets are unlicensed for commercial or non-commercial use.
+
