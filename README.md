@@ -21,7 +21,7 @@
  - [SwiftyJSON](https://github.com/SwiftyJSON/SwiftyJSON)：在Swift下更容易处理Json数据
  
  
-### Contact
+### 联系我
 
 * Huang Hong
 * [@BBC6BAE9 SinaWeibo](http://weibo.com/3216118734/profile?topnav=1&wvr=6&is_all=1)
