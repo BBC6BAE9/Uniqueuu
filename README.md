@@ -19,6 +19,18 @@ This was my submission for the WWDC 2014 Student Scholarship, which I ended up w
 ![Screenshot1](https://raw.githubusercontent.com/indragiek/WWDC-2014/master/screenshot1.png)
 
 
+### 用到的三方框架
+
+Kingfisher
+SVProgressHUD
+FDFullscreenPopGesture
+Alamofire
+SwiftyJSON
+
+
+ - [SnapKit](https://github.com/SnapKit/Masonry)：Masony的Swift版本，用于布局
+ 
+ 
 ### Contact
 
 * Indragie Karunaratne
