@@ -1,12 +1,6 @@
-# Uniqueuu
-模仿的另外一个开源项目用Swift3.0写的，里面包括1.启动页2.广告业3.新特性引导页和其他一些常用的控件的写法。
-首页轮播图
-
-
-
-
 ## 读物 App Swift3.0
-这是学习Swift3.0的时候写的一个仿着别人的App写的，很多地方写的很粗糙，有时间的话我会慢慢完善这个App
+
+这是学习Swift3.0的时候写的一个仿着别人的App写的，很多地方写的很粗糙，有时间的话我会慢慢完善这个App。
 **Details**:
 
 * Content is loaded via JSON files, using [Mantle](https://github.com/Mantle/Mantle). That includes styled text, images, and video.
@@ -28,8 +22,8 @@
  
 ### Contact
 
-* Indragie Karunaratne
-* [@indragie](http://twitter.com/indragie)
+* Huang Hong
+* [@BBC6BAE9](http://weibo.com/3216118734/profile?rightmod=1&wvr=6&mod=personnumber&is_all=1)
 * [我的技术博客](http://blog.csdn.net/huanghuanghonghong)
 
 
