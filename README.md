@@ -23,7 +23,8 @@ This was my submission for the WWDC 2014 Student Scholarship, which I ended up w
 
 * Indragie Karunaratne
 * [@indragie](http://twitter.com/indragie)
-* [http://indragie.com](http://indragie.com)
+* [我的技术博客](http://blog.csdn.net/huanghuanghonghong)
+
 
 ### License
 
