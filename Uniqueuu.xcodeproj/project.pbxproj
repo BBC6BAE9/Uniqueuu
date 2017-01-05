@@ -54,7 +54,9 @@
 		045999E51E17965E008E8911 /* YMGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045999E41E17965E008E8911 /* YMGroup.swift */; };
 		045999E71E1796C1008E8911 /* YMVerticalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045999E61E1796C1008E8911 /* YMVerticalButton.swift */; };
 		045999ED1E17BF59008E8911 /* UNCommunityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045999EC1E17BF59008E8911 /* UNCommunityViewController.swift */; };
-		045999F51E17CBD9008E8911 /* UNCommunityTopicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045999F41E17CBD9008E8911 /* UNCommunityTopicViewController.swift */; };
+		047666721E1DDC7A009A9527 /* YMCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047666701E1DDC7A009A9527 /* YMCollectionViewCell.swift */; };
+		047666731E1DDC7A009A9527 /* YMCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047666711E1DDC7A009A9527 /* YMCollectionViewCell.xib */; };
+		047666751E1DDCF4009A9527 /* UNProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047666741E1DDCF4009A9527 /* UNProductDetailViewController.swift */; };
 		04A144671E079D8C00870F19 /* UNProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A144661E079D8C00870F19 /* UNProductViewController.swift */; };
 		04A29E941E06D42100D4177F /* UNRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A29E931E06D42100D4177F /* UNRegisterViewController.swift */; };
 		04A29E9A1E06D65B00D4177F /* UNLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A29E991E06D65B00D4177F /* UNLoginViewController.xib */; };
@@ -132,7 +134,9 @@
 		045999E41E17965E008E8911 /* YMGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YMGroup.swift; sourceTree = "<group>"; };
 		045999E61E1796C1008E8911 /* YMVerticalButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YMVerticalButton.swift; sourceTree = "<group>"; };
 		045999EC1E17BF59008E8911 /* UNCommunityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UNCommunityViewController.swift; sourceTree = "<group>"; };
-		045999F41E17CBD9008E8911 /* UNCommunityTopicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UNCommunityTopicViewController.swift; sourceTree = "<group>"; };
+		047666701E1DDC7A009A9527 /* YMCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YMCollectionViewCell.swift; sourceTree = "<group>"; };
+		047666711E1DDC7A009A9527 /* YMCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YMCollectionViewCell.xib; sourceTree = "<group>"; };
+		047666741E1DDCF4009A9527 /* UNProductDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UNProductDetailViewController.swift; sourceTree = "<group>"; };
 		04A144661E079D8C00870F19 /* UNProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UNProductViewController.swift; sourceTree = "<group>"; };
 		04A29E931E06D42100D4177F /* UNRegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UNRegisterViewController.swift; sourceTree = "<group>"; };
 		04A29E991E06D65B00D4177F /* UNLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UNLoginViewController.xib; sourceTree = "<group>"; };
@@ -390,7 +394,7 @@
 			isa = PBXGroup;
 			children = (
 				045999EC1E17BF59008E8911 /* UNCommunityViewController.swift */,
-				045999F41E17CBD9008E8911 /* UNCommunityTopicViewController.swift */,
+				047666741E1DDCF4009A9527 /* UNProductDetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -405,6 +409,8 @@
 		045999EB1E17BF3A008E8911 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				047666701E1DDC7A009A9527 /* YMCollectionViewCell.swift */,
+				047666711E1DDC7A009A9527 /* YMCollectionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -637,6 +643,7 @@
 				04345A3E1E0677F2001BDFEF /* YMHomeCell.xib in Resources */,
 				04470EFD1E0814EB00195A73 /* LaunchScreen.storyboard in Resources */,
 				04AF3A201E0523AC00F60DA3 /* Main.storyboard in Resources */,
+				047666731E1DDC7A009A9527 /* YMCollectionViewCell.xib in Resources */,
 				04270A9A1E07A4E200C22840 /* UNCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -710,6 +717,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				047666751E1DDCF4009A9527 /* UNProductDetailViewController.swift in Sources */,
 				04345A4B1E0677F2001BDFEF /* UNSettingViewController.swift in Sources */,
 				04345A3A1E0677F2001BDFEF /* UNChannel.swift in Sources */,
 				04003F391E15FD370087EFAA /* YMCollectionPost.swift in Sources */,
@@ -724,6 +732,7 @@
 				0404256A1E17FA0D008F16E2 /* MainViewController.swift in Sources */,
 				045999E51E17965E008E8911 /* YMGroup.swift in Sources */,
 				04345A451E0677F2001BDFEF /* UNNetworkTool.swift in Sources */,
+				047666721E1DDC7A009A9527 /* YMCollectionViewCell.swift in Sources */,
 				04345A3F1E0677F2001BDFEF /* UNLoginViewController.swift in Sources */,
 				04003F321E15FBBF0087EFAA /* YMCategoryCollectionViewCell.swift in Sources */,
 				04345A3D1E0677F2001BDFEF /* YMHomeCell.swift in Sources */,
@@ -740,7 +749,6 @@
 				04345A4D1E0677F2001BDFEF /* UNMineHeaderView.swift in Sources */,
 				04345A481E0677F2001BDFEF /* UNMeChoiceView.swift in Sources */,
 				045999ED1E17BF59008E8911 /* UNCommunityViewController.swift in Sources */,
-				045999F51E17CBD9008E8911 /* UNCommunityTopicViewController.swift in Sources */,
 				04A29E941E06D42100D4177F /* UNRegisterViewController.swift in Sources */,
 				04D94F141E10DCD70058A4E2 /* JMCarouselScrollView.swift in Sources */,
 				04345A431E0677F2001BDFEF /* UNTabBarController.swift in Sources */,

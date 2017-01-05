@@ -15,7 +15,6 @@ class UNNetworkTool: NSObject {
     /// 单例
     static let shareNetworkTool = UNNetworkTool()
     
-    
     /// 获取首页顶部选择数据
     func loadHomeTopData(finished:@escaping (_ ym_channels: [UNChannel]) -> ()) {
         
@@ -229,6 +228,49 @@ class UNNetworkTool: NSObject {
                                 outGroups.append(inGroups as AnyObject)
                             }
                             finished(outGroups)
+                        }
+                    }
+                }
+        }
+    }
+
+    /// 获取单品数据
+    func loadProductData(finished:@escaping (_ products: [UNProduct]) -> ()) {
+        SVProgressHUD.show(withStatus: "正在加载...")
+        let url = BASE_URL + "v2/items"
+        let params = ["gender": 1,
+                      "generation": 1,
+                      "limit": 20,
+                      "offset": 0]
+    
+         Alamofire.request(url, method: .get, parameters: params).responseJSON { (response: DataResponse<Any>) in
+                guard response.result.isSuccess else {
+                    SVProgressHUD.showError(withStatus: "加载失败...")
+                    return
+                }
+                if let value = response.result.value {
+                    let dict = JSON(value)
+                    let code = dict["code"].intValue
+                    let message = dict["message"].stringValue
+                    guard code == RETURN_OK else {
+                        SVProgressHUD.showInfo(withStatus: message)
+                        return
+                    }
+                    SVProgressHUD.dismiss()
+                    if let data = dict["data"].dictionary {
+                        
+                        
+                        if let items = data["items"]?.arrayObject {
+                            var products = [UNProduct]()
+                        
+                            for item in items {
+
+                                if let itemData = (item as! NSDictionary)["data"] {
+                                    let product = UNProduct(dict: itemData as! [String: AnyObject])
+                                    products.append(product)
+}
+                            }
+                            finished(products)
                         }
                     }
                 }
