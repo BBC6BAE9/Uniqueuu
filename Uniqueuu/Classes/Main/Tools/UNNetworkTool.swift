@@ -14,7 +14,7 @@ import SwiftyJSON
 class UNNetworkTool: NSObject {
     /// 单例
     static let shareNetworkTool = UNNetworkTool()
-    
+
     /// 获取首页顶部选择数据
     func loadHomeTopData(finished:@escaping (_ ym_channels: [UNChannel]) -> ()) {
         
