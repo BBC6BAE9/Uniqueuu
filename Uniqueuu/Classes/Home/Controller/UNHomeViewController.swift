@@ -30,7 +30,13 @@ class UNHomeViewController: UNBaseViewController {
         UNNetworkTool.shareNetworkTool.loadHomeTopData { [weak self] (un_channels) in
             for channel in un_channels {
                 let vc = UNTopicViewController()
+                vc.topContainer.isHidden = true
+                vc.topContainer.frame = CGRect(x:0,y:0,width:SCREENW,height: 0)
                 vc.title = channel.name!
+                if(vc.title == "精选"){
+                vc.topContainer.isHidden = false
+                vc.topContainer.frame = CGRect(x:0,y:0,width:SCREENW,height: 220)
+                }
                 vc.type = channel.id!
                 self!.addChildViewController(vc)
             }
@@ -39,8 +45,6 @@ class UNHomeViewController: UNBaseViewController {
             // 底部的scrollview
             self!.setupContentView()
         }
-        
-       
     }
     
     func setupChildViewControllers() {
@@ -106,7 +110,6 @@ class UNHomeViewController: UNBaseViewController {
             if index == 0 {
                 button.isEnabled = false
                 selectedButton = button
-                
                 //让按钮内部的Label根据文字来计算内容
                 button.titleLabel?.sizeToFit()
                 indicatorView.width = button.titleLabel!.width

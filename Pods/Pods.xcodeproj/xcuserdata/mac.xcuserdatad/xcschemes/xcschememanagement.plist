@@ -24,6 +24,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SSKeychain.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SVProgressHUD.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -39,6 +44,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>kerkee.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -47,17 +57,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1AD4BE49BAA589C42747C7F14E133637</key>
+		<key>2F9A436E15A5F0786BE1700110868E07</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2CB4670B23653E26E27A4F519482CB50</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>5A5108C67227558259A80A65DC592827</key>
+		<key>6A410FD01BA8CDB3665B80D5C5DA5B04</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -67,12 +72,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>9659050A426C26BBB3A8375279C6C451</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>97D4B3D67D117E177351563CDC60EC3D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>C4944FEC314D1A66588651D006273ADE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D0A69A6F0E380800AF32DDAF80FB6943</key>
+		<key>D3A73823A8E75E656C4FE7F6FDDAC2F9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EA5ACDD9601460C6142201482A7252E6</key>
 		<dict>
 			<key>primary</key>
 			<true/>

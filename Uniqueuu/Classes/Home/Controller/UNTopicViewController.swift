@@ -18,7 +18,6 @@ class UNTopicViewController: UITableViewController,YMCategoryBottomViewDelegate 
         
     }
     
-    
     var headerView: JMCarouselScrollView?
 
     var type = Int()
@@ -39,14 +38,12 @@ class UNTopicViewController: UITableViewController,YMCategoryBottomViewDelegate 
             stepTime: 5.0)
 
         topContainer.addSubview(headerView!)
-        
-        
-        let bottomBGView = YMCategoryBottomView(frame: CGRect(x:0, y:(headerView?.frame.maxY)! + 10, width:SCREENW, height:SCREENH - 160))
-        bottomBGView.backgroundColor = YMGlobalColor()
-        bottomBGView.delegate = self
-        topContainer.addSubview(bottomBGView)
-        
-        
+     
+//        let bottomBGView = YMCategoryBottomView(frame: CGRect(x:0, y:(headerView?.frame.maxY)! + 10, width:SCREENW, height:SCREENH - 160))
+//        bottomBGView.backgroundColor = YMGlobalColor()
+//        bottomBGView.delegate = self
+//        topContainer.addSubview(bottomBGView)
+      
         self.tableView.tableHeaderView = topContainer
         // 添加刷新控件
         refreshControl = UIRefreshControl()
@@ -84,10 +81,9 @@ class UNTopicViewController: UITableViewController,YMCategoryBottomViewDelegate 
     
     lazy var topContainer: UIView = {
         let topContainer = UIView()
-        topContainer.frame = CGRect(x:0,y:0,width:SCREENW,height:500)
+        topContainer.frame = CGRect(x:0,y:0,width:SCREENW,height: 220)
         return topContainer
     }()
-
 }
 
 extension UNTopicViewController: YMHomeCellDelegate {

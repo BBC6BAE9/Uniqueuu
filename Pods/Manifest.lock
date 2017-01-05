@@ -1,14 +1,18 @@
 PODS:
   - Alamofire (4.0.1)
   - FDFullscreenPopGesture (1.1)
+  - kerkee (1.0.4):
+    - SSKeychain
   - Kingfisher (3.1.4)
   - SnapKit (3.0.2)
+  - SSKeychain (1.4.1)
   - SVProgressHUD (2.0.4)
   - SwiftyJSON (2.3.2)
 
 DEPENDENCIES:
   - Alamofire (~> 4.0.0)
   - FDFullscreenPopGesture (~> 1.1)
+  - kerkee (~> 1.0.4)
   - Kingfisher (~> 3.1.0)
   - SnapKit (~> 3.0.0)
   - SVProgressHUD
@@ -27,11 +31,13 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
   FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
+  kerkee: 3d2352d3938e396af8fd48dff981fd5e7cb9076e
   Kingfisher: 6c67e3e57f2d81a9cfdfa25052cd86f33ceac9bb
   SnapKit: 2e456761aa92d4d4067a7a5594c18769d451a8ad
+  SSKeychain: 55cc80f66f5c73da827e3077f02e43528897db41
   SVProgressHUD: bfde85ed6c573ea802b9cb37894ed9b629034f1b
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
 
-PODFILE CHECKSUM: 6ffd0d267904760d0769b8c14912cf7763338d0d
+PODFILE CHECKSUM: 8601a40234216ff970f85d087eb786af0aa804fb
 
 COCOAPODS: 1.2.0.beta.1
