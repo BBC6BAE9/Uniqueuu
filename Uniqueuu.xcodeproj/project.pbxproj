@@ -64,7 +64,7 @@
 		04AF3A301E0523AC00F60DA3 /* UniqueuuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AF3A2F1E0523AC00F60DA3 /* UniqueuuTests.swift */; };
 		04AF3A3B1E0523AC00F60DA3 /* UniqueuuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AF3A3A1E0523AC00F60DA3 /* UniqueuuUITests.swift */; };
 		04AF3A4B1E05262600F60DA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04AF3A4A1E05262600F60DA3 /* Assets.xcassets */; };
-		04D94F141E10DCD70058A4E2 /* JMCarouselScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D94F131E10DCD70058A4E2 /* JMCarouselScrollView.swift */; };
+		04E0C5BB1E1DFCC400D2D97E /* UNCarouselScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E0C5BA1E1DFCC400D2D97E /* UNCarouselScrollView.swift */; };
 		FBB2FA81A80D2CDF22B6BBC3 /* Pods_Uniqueuu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B652929089D0294AA1BC398 /* Pods_Uniqueuu.framework */; };
 /* End PBXBuildFile section */
 
@@ -149,7 +149,7 @@
 		04AF3A3A1E0523AC00F60DA3 /* UniqueuuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniqueuuUITests.swift; sourceTree = "<group>"; };
 		04AF3A3C1E0523AC00F60DA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04AF3A4A1E05262600F60DA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		04D94F131E10DCD70058A4E2 /* JMCarouselScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JMCarouselScrollView.swift; sourceTree = "<group>"; };
+		04E0C5BA1E1DFCC400D2D97E /* UNCarouselScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UNCarouselScrollView.swift; sourceTree = "<group>"; };
 		0E3A0D3332858039AFB69AC2 /* Pods-Uniqueuu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Uniqueuu.release.xcconfig"; path = "Pods/Target Support Files/Pods-Uniqueuu/Pods-Uniqueuu.release.xcconfig"; sourceTree = "<group>"; };
 		70108AAC0BD18CE54F8D9FAA /* Pods-Uniqueuu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Uniqueuu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Uniqueuu/Pods-Uniqueuu.debug.xcconfig"; sourceTree = "<group>"; };
 		9B652929089D0294AA1BC398 /* Pods_Uniqueuu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Uniqueuu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -278,7 +278,7 @@
 		04345A191E0677F2001BDFEF /* View */ = {
 			isa = PBXGroup;
 			children = (
-				04D94F131E10DCD70058A4E2 /* JMCarouselScrollView.swift */,
+				04E0C5BA1E1DFCC400D2D97E /* UNCarouselScrollView.swift */,
 				04345A1A1E0677F2001BDFEF /* UNHomeCell.swift */,
 				04345A1B1E0677F2001BDFEF /* YMHomeCell.swift */,
 				04345A1C1E0677F2001BDFEF /* YMHomeCell.xib */,
@@ -730,6 +730,7 @@
 				04270A9C1E07A65B00C22840 /* YMSearchResult.swift in Sources */,
 				04345A421E0677F2001BDFEF /* UNNavigationController.swift in Sources */,
 				0404256A1E17FA0D008F16E2 /* MainViewController.swift in Sources */,
+				04E0C5BB1E1DFCC400D2D97E /* UNCarouselScrollView.swift in Sources */,
 				045999E51E17965E008E8911 /* YMGroup.swift in Sources */,
 				04345A451E0677F2001BDFEF /* UNNetworkTool.swift in Sources */,
 				047666721E1DDC7A009A9527 /* YMCollectionViewCell.swift in Sources */,
@@ -750,7 +751,6 @@
 				04345A481E0677F2001BDFEF /* UNMeChoiceView.swift in Sources */,
 				045999ED1E17BF59008E8911 /* UNCommunityViewController.swift in Sources */,
 				04A29E941E06D42100D4177F /* UNRegisterViewController.swift in Sources */,
-				04D94F141E10DCD70058A4E2 /* JMCarouselScrollView.swift in Sources */,
 				04345A431E0677F2001BDFEF /* UNTabBarController.swift in Sources */,
 				04270A991E07A4E200C22840 /* UNCollectionViewCell.swift in Sources */,
 				04345A3B1E0677F2001BDFEF /* UNHomeItem.swift in Sources */,

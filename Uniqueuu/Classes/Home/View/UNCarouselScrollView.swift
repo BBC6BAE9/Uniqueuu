@@ -1,17 +1,19 @@
 //
-//  JMCarouselScrollView.swift
-//  JMCarouselView
+//  UNCarouselScrollView.swift
+//  Uniqueuu
 //
-//  Created by JimmyPeng on 15/12/17.
-//  Copyright © 2015年 Jimmy. All rights reserved.
+//  Created by huang on 2017/1/5.
+//  Copyright © 2017年 BBC6BAE9. All rights reserved.
 //
+
+import UIKit
 
 import UIKit
 
 
 //广告数目
 
-class JMCarouselScrollView: UIView,UIScrollViewDelegate
+class UNCarouselScrollView: UIView,UIScrollViewDelegate
 {
     //MARK: - 属性
     //是否URL加载
@@ -37,15 +39,15 @@ class JMCarouselScrollView: UIView,UIScrollViewDelegate
     
     //MARK: - 初始化方法
     /**
-    初始化方法1,传入图片URL数组,以及pageControl的当前page点的颜色,特别注意需要SDWebImage框架支持
-    
-    - parameter frame:          frame
-    - parameter imgURLArray:    图片URL数组
-    - parameter pagePointColor: pageControl的当前page点的颜色
-    - parameter stepTime:       广告每一页停留时间
-    
-    - returns: ScrollView图片轮播器
-    */
+     初始化方法1,传入图片URL数组,以及pageControl的当前page点的颜色,特别注意需要SDWebImage框架支持
+     
+     - parameter frame:          frame
+     - parameter imgURLArray:    图片URL数组
+     - parameter pagePointColor: pageControl的当前page点的颜色
+     - parameter stepTime:       广告每一页停留时间
+     
+     - returns: ScrollView图片轮播器
+     */
     init(frame: CGRect, imageURLArray:[String], pagePointColor: UIColor, stepTime: TimeInterval)
     {
         super.init(frame: frame)
@@ -142,8 +144,8 @@ class JMCarouselScrollView: UIView,UIScrollViewDelegate
     
     //MARK: - 创建广告图片
     /**
-    *  创建广告图片
-    */
+     *  创建广告图片
+     */
     fileprivate func prepareImage()
     {
         
@@ -191,7 +193,7 @@ class JMCarouselScrollView: UIView,UIScrollViewDelegate
                 }
                 else
                 {
-//                    imgView.sd_setImage(with: URL(string: (imgURLArray?.first)!), placeholderImage: UIImage(named: "holder"))
+                    //                    imgView.sd_setImage(with: URL(string: (imgURLArray?.first)!), placeholderImage: UIImage(named: "holder"))
                     imgView.kf.setImage(with: URL(string: (imgURLArray?.first)!), placeholder: UIImage(named:"holder"), options: nil, progressBlock: nil, completionHandler: nil)
                     
                 }
@@ -205,7 +207,7 @@ class JMCarouselScrollView: UIView,UIScrollViewDelegate
                 }
                 else
                 {
-//                    imgView.sd_setImage(with: , placeholderImage: UIImage(named: "holder"))
+                    //                    imgView.sd_setImage(with: , placeholderImage: UIImage(named: "holder"))
                     imgView.kf.setImage(with: URL(string: (imgURLArray?[i - 1])!), placeholder: UIImage(named: "holder"), options: nil, progressBlock: nil, completionHandler: nil)
                 }
             }
@@ -241,9 +243,9 @@ class JMCarouselScrollView: UIView,UIScrollViewDelegate
     //MARK: - pragma mark- 代理
     
     /**
-    * 动画减速时的判断
-    *
-    */
+     * 动画减速时的判断
+     *
+     */
     func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView)
     {
         carousel()
@@ -325,7 +327,7 @@ class JMCarouselScrollView: UIView,UIScrollViewDelegate
     //MARK:设置timer
     fileprivate func setTheTimer()
     {
-        timer = Timer.scheduledTimer(timeInterval: pageStepTime, target: self, selector: #selector(JMCarouselScrollView.nextImage), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: pageStepTime, target: self, selector: #selector(UNCarouselScrollView.nextImage), userInfo: nil, repeats: true)
         
         let runloop = RunLoop.current
         
@@ -334,12 +336,10 @@ class JMCarouselScrollView: UIView,UIScrollViewDelegate
     }
     
     
-    
     //MARL: - 懒加载
     //广告滚动view
     fileprivate lazy var ScrollView: UIScrollView = UIScrollView()
     
     fileprivate lazy var pageControl: UIPageControl =  UIPageControl()
-    
-    
+   
 }

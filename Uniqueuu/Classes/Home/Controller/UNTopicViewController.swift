@@ -18,7 +18,7 @@ class UNTopicViewController: UITableViewController,YMCategoryBottomViewDelegate 
         
     }
     
-    var headerView: JMCarouselScrollView?
+    var headerView: UNCarouselScrollView?
 
     var type = Int()
     //首页数据列表
@@ -31,7 +31,7 @@ class UNTopicViewController: UITableViewController,YMCategoryBottomViewDelegate 
         view.backgroundColor = YMGlobalColor()
         setupTableView()
 
-        headerView = JMCarouselScrollView(
+        headerView = UNCarouselScrollView(
             frame: CGRect(x: 0, y: 0, width:UIScreen.main.bounds.width, height: 220),
             imageURLArray: urlStringArr(),
             pagePointColor: UIColor.white,
