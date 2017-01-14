@@ -25,13 +25,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if !UserDefaults.standard.bool(forKey: YMFirstLaunch) {
             window?.rootViewController = UNNewfeatureViewController()
             UserDefaults.standard.set(true, forKey: YMFirstLaunch)
+            loadLaunchAd()
         } else {
 
             window?.rootViewController = UNTabBarController()
 
         }
 
-        loadLaunchAd()
         return true
     }
 
@@ -42,12 +42,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         timer.invalidate()
         timer = Timer.scheduledTimer(timeInterval: 9, target: self, selector: #selector(timerAction), userInfo: nil, repeats: true)
     
-          let storyboard = UIStoryboard.init(name: "LaunchScreen", bundle: nil)
-    
-    
-        
+        let storyboard = UIStoryboard.init(name: "LaunchScreen", bundle: nil)
+
         let  vc  = storyboard.instantiateViewController(withIdentifier: "LaunchScreen")
-        
         
         self.launchView = vc.view;
         

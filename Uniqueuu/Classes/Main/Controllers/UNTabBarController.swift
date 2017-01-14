@@ -14,7 +14,10 @@ class UNTabBarController: UITabBarController {
         super.viewDidLoad()
         tabBar.tintColor = UIColor(red: 245 / 255, green: 80 / 255, blue: 83 / 255, alpha: 1.0)
         /* 添加子控制器*/
-        addChildViewControllers()
+//        addChildViewControllers()
+        
+        
+        setupChildControllers()
         setupComposeButton()
     
     }
@@ -28,7 +31,7 @@ class UNTabBarController: UITabBarController {
         let count:CGFloat = CGFloat(childViewControllers.count)
         let w = tabBar.bounds.width/count
         //缩进
-        composeButton.frame = tabBar.bounds.insetBy(dx: 2*w, dy: -20)
+        composeButton.frame = tabBar.bounds.insetBy(dx: 2*w, dy: -15)
         
         
     }
@@ -73,3 +76,58 @@ class UNTabBarController: UITabBarController {
     lazy var composeButton:UIButton = UIButton.bb_imageButton("", backgroundImageName: "cus")
     
 }
+
+
+extension UNTabBarController {
+    func setupChildControllers(){
+        let array = [
+            ["clsName":"UNHomeViewController","title":"首页","imageName":"TabBar_home_23x23_"],
+            ["clsName":"UNCommunityViewController","title":"消息","imageName":"TabBar_gift_23x23_"],
+            ["clsName":"UIViewController"],
+            ["clsName":"UNCategoryViewController","title":"发现","imageName":"TabBar_category_23x23_"],
+            ["clsName":"UNMeViewController","title":"我","imageName":"TabBar_me_boy_23x23_"]
+        ]
+        var arrayM = [UIViewController]()
+        for dict in array{
+            arrayM.append(controller(dict: dict))
+        }
+        viewControllers = arrayM
+    }
+    
+    private func controller(dict:[String:String])->UIViewController{
+        
+        //1.取得字典内容
+        guard let clsName = dict["clsName"],
+            let title = dict["title"],
+            let imageName = dict["imageName"],
+            let cls = NSClassFromString(Bundle.main.nameSpace+"."+clsName)as? UIViewController.Type
+            else{
+                
+                return UIViewController()
+                
+        }
+        
+        //2.创建视图控制器
+        
+        
+        //系统默认的是12号字
+        let vc = cls.init()
+        vc.title = title
+        let imgName = "\(imageName)"
+        vc.tabBarItem.image = UIImage(named: imgName)
+        vc.tabBarItem.selectedImage = UIImage(named: imageName + "selected")
+
+        //设置tabbar的标题字体
+        vc.tabBarItem.setTitleTextAttributes([NSForegroundColorAttributeName:UIColor.red,NSFontAttributeName:UIFont.systemFont(ofSize: 14)],
+                                             for: .highlighted)
+        
+        
+        let nav = UNNavigationController(rootViewController: vc)
+        
+        return nav
+        
+    }
+    
+    
+}
+
