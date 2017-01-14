@@ -57,6 +57,19 @@
 		047666721E1DDC7A009A9527 /* YMCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047666701E1DDC7A009A9527 /* YMCollectionViewCell.swift */; };
 		047666731E1DDC7A009A9527 /* YMCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047666711E1DDC7A009A9527 /* YMCollectionViewCell.xib */; };
 		047666751E1DDCF4009A9527 /* UNProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047666741E1DDCF4009A9527 /* UNProductDetailViewController.swift */; };
+		049F16F61E29E29000120BF0 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 049F16DF1E29E29000120BF0 /* NSArray+Log.m */; };
+		049F16F71E29E29000120BF0 /* NSAttributedString+CZAdditon.m in Sources */ = {isa = PBXBuildFile; fileRef = 049F16E11E29E29000120BF0 /* NSAttributedString+CZAdditon.m */; };
+		049F16F81E29E29000120BF0 /* NSObject+CZRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 049F16E31E29E29000120BF0 /* NSObject+CZRuntime.m */; };
+		049F16F91E29E29000120BF0 /* NSString+CZBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 049F16E51E29E29000120BF0 /* NSString+CZBase64.m */; };
+		049F16FA1E29E29000120BF0 /* NSString+CZHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 049F16E71E29E29000120BF0 /* NSString+CZHash.m */; };
+		049F16FB1E29E29000120BF0 /* NSString+CZPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 049F16E91E29E29000120BF0 /* NSString+CZPath.m */; };
+		049F16FC1E29E29000120BF0 /* UIButton+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 049F16EB1E29E29000120BF0 /* UIButton+CZAddition.m */; };
+		049F16FD1E29E29000120BF0 /* UIColor+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 049F16ED1E29E29000120BF0 /* UIColor+CZAddition.m */; };
+		049F16FE1E29E29000120BF0 /* UILabel+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 049F16EF1E29E29000120BF0 /* UILabel+CZAddition.m */; };
+		049F16FF1E29E29000120BF0 /* UIScreen+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 049F16F11E29E29000120BF0 /* UIScreen+CZAddition.m */; };
+		049F17001E29E29000120BF0 /* UIView+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 049F16F31E29E29000120BF0 /* UIView+CZAddition.m */; };
+		049F17011E29E29000120BF0 /* UIViewController+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 049F16F51E29E29000120BF0 /* UIViewController+CZAddition.m */; };
+		049F17041E29E2DD00120BF0 /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049F17031E29E2DD00120BF0 /* Bundle+Extensions.swift */; };
 		04A144671E079D8C00870F19 /* UNProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A144661E079D8C00870F19 /* UNProductViewController.swift */; };
 		04A29E941E06D42100D4177F /* UNRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A29E931E06D42100D4177F /* UNRegisterViewController.swift */; };
 		04A29E9A1E06D65B00D4177F /* UNLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A29E991E06D65B00D4177F /* UNLoginViewController.xib */; };
@@ -137,6 +150,33 @@
 		047666701E1DDC7A009A9527 /* YMCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YMCollectionViewCell.swift; sourceTree = "<group>"; };
 		047666711E1DDC7A009A9527 /* YMCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YMCollectionViewCell.xib; sourceTree = "<group>"; };
 		047666741E1DDCF4009A9527 /* UNProductDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UNProductDetailViewController.swift; sourceTree = "<group>"; };
+		049F16DD1E29E29000120BF0 /* CZAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZAdditions.h; sourceTree = "<group>"; };
+		049F16DE1E29E29000120BF0 /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
+		049F16DF1E29E29000120BF0 /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
+		049F16E01E29E29000120BF0 /* NSAttributedString+CZAdditon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+CZAdditon.h"; sourceTree = "<group>"; };
+		049F16E11E29E29000120BF0 /* NSAttributedString+CZAdditon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+CZAdditon.m"; sourceTree = "<group>"; };
+		049F16E21E29E29000120BF0 /* NSObject+CZRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CZRuntime.h"; sourceTree = "<group>"; };
+		049F16E31E29E29000120BF0 /* NSObject+CZRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CZRuntime.m"; sourceTree = "<group>"; };
+		049F16E41E29E29000120BF0 /* NSString+CZBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CZBase64.h"; sourceTree = "<group>"; };
+		049F16E51E29E29000120BF0 /* NSString+CZBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CZBase64.m"; sourceTree = "<group>"; };
+		049F16E61E29E29000120BF0 /* NSString+CZHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CZHash.h"; sourceTree = "<group>"; };
+		049F16E71E29E29000120BF0 /* NSString+CZHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CZHash.m"; sourceTree = "<group>"; };
+		049F16E81E29E29000120BF0 /* NSString+CZPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CZPath.h"; sourceTree = "<group>"; };
+		049F16E91E29E29000120BF0 /* NSString+CZPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CZPath.m"; sourceTree = "<group>"; };
+		049F16EA1E29E29000120BF0 /* UIButton+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+CZAddition.h"; sourceTree = "<group>"; };
+		049F16EB1E29E29000120BF0 /* UIButton+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+CZAddition.m"; sourceTree = "<group>"; };
+		049F16EC1E29E29000120BF0 /* UIColor+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CZAddition.h"; sourceTree = "<group>"; };
+		049F16ED1E29E29000120BF0 /* UIColor+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CZAddition.m"; sourceTree = "<group>"; };
+		049F16EE1E29E29000120BF0 /* UILabel+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+CZAddition.h"; sourceTree = "<group>"; };
+		049F16EF1E29E29000120BF0 /* UILabel+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+CZAddition.m"; sourceTree = "<group>"; };
+		049F16F01E29E29000120BF0 /* UIScreen+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+CZAddition.h"; sourceTree = "<group>"; };
+		049F16F11E29E29000120BF0 /* UIScreen+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+CZAddition.m"; sourceTree = "<group>"; };
+		049F16F21E29E29000120BF0 /* UIView+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CZAddition.h"; sourceTree = "<group>"; };
+		049F16F31E29E29000120BF0 /* UIView+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CZAddition.m"; sourceTree = "<group>"; };
+		049F16F41E29E29000120BF0 /* UIViewController+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CZAddition.h"; sourceTree = "<group>"; };
+		049F16F51E29E29000120BF0 /* UIViewController+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CZAddition.m"; sourceTree = "<group>"; };
+		049F17031E29E2DD00120BF0 /* Bundle+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Extensions.swift"; sourceTree = "<group>"; };
+		049F17121E29EB5400120BF0 /* Uniqueuu-Bridging-header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Uniqueuu-Bridging-header.h"; path = "Uniqueuu/Uniqueuu-Bridging-header.h"; sourceTree = "<group>"; };
 		04A144661E079D8C00870F19 /* UNProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UNProductViewController.swift; sourceTree = "<group>"; };
 		04A29E931E06D42100D4177F /* UNRegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UNRegisterViewController.swift; sourceTree = "<group>"; };
 		04A29E991E06D65B00D4177F /* UNLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UNLoginViewController.xib; sourceTree = "<group>"; };
@@ -330,6 +370,8 @@
 			children = (
 				04345A271E0677F2001BDFEF /* UNConst.swift */,
 				04345A281E0677F2001BDFEF /* UNNetworkTool.swift */,
+				049F17021E29E2DD00120BF0 /* Extension */,
+				049F16DC1E29E29000120BF0 /* Additions */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -415,6 +457,46 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		049F16DC1E29E29000120BF0 /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				049F16DD1E29E29000120BF0 /* CZAdditions.h */,
+				049F16DE1E29E29000120BF0 /* NSArray+Log.h */,
+				049F16DF1E29E29000120BF0 /* NSArray+Log.m */,
+				049F16E01E29E29000120BF0 /* NSAttributedString+CZAdditon.h */,
+				049F16E11E29E29000120BF0 /* NSAttributedString+CZAdditon.m */,
+				049F16E21E29E29000120BF0 /* NSObject+CZRuntime.h */,
+				049F16E31E29E29000120BF0 /* NSObject+CZRuntime.m */,
+				049F16E41E29E29000120BF0 /* NSString+CZBase64.h */,
+				049F16E51E29E29000120BF0 /* NSString+CZBase64.m */,
+				049F16E61E29E29000120BF0 /* NSString+CZHash.h */,
+				049F16E71E29E29000120BF0 /* NSString+CZHash.m */,
+				049F16E81E29E29000120BF0 /* NSString+CZPath.h */,
+				049F16E91E29E29000120BF0 /* NSString+CZPath.m */,
+				049F16EA1E29E29000120BF0 /* UIButton+CZAddition.h */,
+				049F16EB1E29E29000120BF0 /* UIButton+CZAddition.m */,
+				049F16EC1E29E29000120BF0 /* UIColor+CZAddition.h */,
+				049F16ED1E29E29000120BF0 /* UIColor+CZAddition.m */,
+				049F16EE1E29E29000120BF0 /* UILabel+CZAddition.h */,
+				049F16EF1E29E29000120BF0 /* UILabel+CZAddition.m */,
+				049F16F01E29E29000120BF0 /* UIScreen+CZAddition.h */,
+				049F16F11E29E29000120BF0 /* UIScreen+CZAddition.m */,
+				049F16F21E29E29000120BF0 /* UIView+CZAddition.h */,
+				049F16F31E29E29000120BF0 /* UIView+CZAddition.m */,
+				049F16F41E29E29000120BF0 /* UIViewController+CZAddition.h */,
+				049F16F51E29E29000120BF0 /* UIViewController+CZAddition.m */,
+			);
+			path = Additions;
+			sourceTree = "<group>";
+		};
+		049F17021E29E2DD00120BF0 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				049F17031E29E2DD00120BF0 /* Bundle+Extensions.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		04A144561E07994200870F19 /* Product */ = {
 			isa = PBXGroup;
 			children = (
@@ -454,6 +536,7 @@
 			isa = PBXGroup;
 			children = (
 				04AF3A191E0523AC00F60DA3 /* Uniqueuu */,
+				049F17121E29EB5400120BF0 /* Uniqueuu-Bridging-header.h */,
 				04AF3A2E1E0523AC00F60DA3 /* UniqueuuTests */,
 				04AF3A391E0523AC00F60DA3 /* UniqueuuUITests */,
 				04AF3A181E0523AC00F60DA3 /* Products */,
@@ -717,16 +800,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				049F16F61E29E29000120BF0 /* NSArray+Log.m in Sources */,
 				047666751E1DDCF4009A9527 /* UNProductDetailViewController.swift in Sources */,
 				04345A4B1E0677F2001BDFEF /* UNSettingViewController.swift in Sources */,
+				049F16F91E29E29000120BF0 /* NSString+CZBase64.m in Sources */,
 				04345A3A1E0677F2001BDFEF /* UNChannel.swift in Sources */,
 				04003F391E15FD370087EFAA /* YMCollectionPost.swift in Sources */,
 				04345A371E0677F2001BDFEF /* UNHomeViewController.swift in Sources */,
 				04003F2B1E15F8610087EFAA /* YMCollection.swift in Sources */,
 				04A144671E079D8C00870F19 /* UNProductViewController.swift in Sources */,
+				049F16FE1E29E29000120BF0 /* UILabel+CZAddition.m in Sources */,
 				04345A441E0677F2001BDFEF /* UNConst.swift in Sources */,
 				04345A491E0677F2001BDFEF /* UNMessageViewController.swift in Sources */,
+				049F16FB1E29E29000120BF0 /* NSString+CZPath.m in Sources */,
 				045999E71E1796C1008E8911 /* YMVerticalButton.swift in Sources */,
+				049F16FC1E29E29000120BF0 /* UIButton+CZAddition.m in Sources */,
 				04270A9C1E07A65B00C22840 /* YMSearchResult.swift in Sources */,
 				04345A421E0677F2001BDFEF /* UNNavigationController.swift in Sources */,
 				0404256A1E17FA0D008F16E2 /* MainViewController.swift in Sources */,
@@ -735,9 +823,14 @@
 				04345A451E0677F2001BDFEF /* UNNetworkTool.swift in Sources */,
 				047666721E1DDC7A009A9527 /* YMCollectionViewCell.swift in Sources */,
 				04345A3F1E0677F2001BDFEF /* UNLoginViewController.swift in Sources */,
+				049F16F81E29E29000120BF0 /* NSObject+CZRuntime.m in Sources */,
 				04003F321E15FBBF0087EFAA /* YMCategoryCollectionViewCell.swift in Sources */,
+				049F17011E29E29000120BF0 /* UIViewController+CZAddition.m in Sources */,
+				049F16FD1E29E29000120BF0 /* UIColor+CZAddition.m in Sources */,
 				04345A3D1E0677F2001BDFEF /* YMHomeCell.swift in Sources */,
 				04003F2E1E15F9E30087EFAA /* YMTopHeaderView.swift in Sources */,
+				049F16FA1E29E29000120BF0 /* NSString+CZHash.m in Sources */,
+				049F17041E29E2DD00120BF0 /* Bundle+Extensions.swift in Sources */,
 				04345A4C1E0677F2001BDFEF /* UNMeFooterView.swift in Sources */,
 				04345A411E0677F2001BDFEF /* UNBaseViewController.swift in Sources */,
 				04003F431E1607F20087EFAA /* UNCategoryViewController.swift in Sources */,
@@ -746,14 +839,17 @@
 				04003F3C1E15FEB70087EFAA /* YMCollectionTableViewCell.swift in Sources */,
 				045864601E07CD5E00D4A979 /* UNNewfeatureViewController.swift in Sources */,
 				045999E31E1795AB008E8911 /* YMCategoryBottomView.swift in Sources */,
+				049F16F71E29E29000120BF0 /* NSAttributedString+CZAdditon.m in Sources */,
 				04345A461E0677F2001BDFEF /* AppDelegate.swift in Sources */,
 				04345A4D1E0677F2001BDFEF /* UNMineHeaderView.swift in Sources */,
 				04345A481E0677F2001BDFEF /* UNMeChoiceView.swift in Sources */,
 				045999ED1E17BF59008E8911 /* UNCommunityViewController.swift in Sources */,
 				04A29E941E06D42100D4177F /* UNRegisterViewController.swift in Sources */,
 				04345A431E0677F2001BDFEF /* UNTabBarController.swift in Sources */,
+				049F17001E29E29000120BF0 /* UIView+CZAddition.m in Sources */,
 				04270A991E07A4E200C22840 /* UNCollectionViewCell.swift in Sources */,
 				04345A3B1E0677F2001BDFEF /* UNHomeItem.swift in Sources */,
+				049F16FF1E29E29000120BF0 /* UIScreen+CZAddition.m in Sources */,
 				04270A9E1E07A6C700C22840 /* UNProduct.swift in Sources */,
 				04345A381E0677F2001BDFEF /* UNSearchViewController.swift in Sources */,
 				04345A3C1E0677F2001BDFEF /* UNHomeCell.swift in Sources */,
@@ -911,6 +1007,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hh.Uniqueuu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/mac/Desktop/Uniqueuu/Uniqueuu/Uniqueuu-Bridging-header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -926,6 +1023,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hh.Uniqueuu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/mac/Desktop/Uniqueuu/Uniqueuu/Uniqueuu-Bridging-header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

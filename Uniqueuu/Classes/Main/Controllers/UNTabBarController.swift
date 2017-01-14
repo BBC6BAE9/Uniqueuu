@@ -15,12 +15,31 @@ class UNTabBarController: UITabBarController {
         tabBar.tintColor = UIColor(red: 245 / 255, green: 80 / 255, blue: 83 / 255, alpha: 1.0)
         /* 添加子控制器*/
         addChildViewControllers()
+        setupComposeButton()
+    
+    }
+    
+
+    private func setupComposeButton(){
+        
+        tabBar.addSubview(composeButton)
+        //设置按钮的位置
+        //计算按钮的宽度
+        let count:CGFloat = CGFloat(childViewControllers.count)
+        let w = tabBar.bounds.width/count
+        //缩进
+        composeButton.frame = tabBar.bounds.insetBy(dx: 2*w, dy: -20)
+        
         
     }
 
+    
     private func addChildViewControllers() {
         addChildViewController("UNHomeViewController", title: "首页", imageName: "TabBar_home_23x23_")
         addChildViewController("UNCommunityViewController", title: "社区", imageName: "TabBar_gift_23x23_")
+        
+        addChildViewController("UNCommunityViewController", title: "", imageName: "")
+        
         addChildViewController("UNCategoryViewController", title: "定制", imageName: "TabBar_category_23x23_")
         addChildViewController("UNMeViewController", title: "我", imageName: "TabBar_me_boy_23x23_")
     }
@@ -49,4 +68,8 @@ class UNTabBarController: UITabBarController {
         // Dispose of any resources that can be recreated.
     }
 
+    
+    //MARK:-私有控件
+    lazy var composeButton:UIButton = UIButton.bb_imageButton("", backgroundImageName: "cus")
+    
 }
