@@ -32,6 +32,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         }
 
+        
+        loadAppInfo()
         return true
     }
 
@@ -93,3 +95,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+//下载json数据以实现动态配置页面
+extension AppDelegate{
+
+     func loadAppInfo(){
+        
+        // 模拟异步
+        DispatchQueue.global().async {
+            
+            let url = Bundle.main.url(forResource: "mainFromNet.json", withExtension: nil)
+            
+            let data = NSData(contentsOf: url!)
+            
+            //写入磁盘
+            
+            let docDir = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true)[0]
+            /*因为OC很多东西都改成了结构体，转换成*/
+            let jsonPath = (docDir as NSString).appendingPathComponent("main.json")
+            
+            data?.write(toFile: jsonPath, atomically: true)
+            
+            print("应用程序加载完毕")
+            print(jsonPath)
+        }
+    }
+
+}

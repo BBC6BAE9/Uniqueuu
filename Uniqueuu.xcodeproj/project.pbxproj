@@ -77,6 +77,8 @@
 		04AF3A301E0523AC00F60DA3 /* UniqueuuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AF3A2F1E0523AC00F60DA3 /* UniqueuuTests.swift */; };
 		04AF3A3B1E0523AC00F60DA3 /* UniqueuuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AF3A3A1E0523AC00F60DA3 /* UniqueuuUITests.swift */; };
 		04AF3A4B1E05262600F60DA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04AF3A4A1E05262600F60DA3 /* Assets.xcassets */; };
+		04C02AA91E2F4FBD008F6642 /* main.json in Resources */ = {isa = PBXBuildFile; fileRef = 04C02AA81E2F4FBD008F6642 /* main.json */; };
+		04C02AAB1E2F582B008F6642 /* mainFromNet.json in Resources */ = {isa = PBXBuildFile; fileRef = 04C02AAA1E2F582B008F6642 /* mainFromNet.json */; };
 		04E0C5BB1E1DFCC400D2D97E /* UNCarouselScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E0C5BA1E1DFCC400D2D97E /* UNCarouselScrollView.swift */; };
 		FBB2FA81A80D2CDF22B6BBC3 /* Pods_Uniqueuu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B652929089D0294AA1BC398 /* Pods_Uniqueuu.framework */; };
 /* End PBXBuildFile section */
@@ -189,6 +191,8 @@
 		04AF3A3A1E0523AC00F60DA3 /* UniqueuuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniqueuuUITests.swift; sourceTree = "<group>"; };
 		04AF3A3C1E0523AC00F60DA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04AF3A4A1E05262600F60DA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04C02AA81E2F4FBD008F6642 /* main.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main.json; sourceTree = "<group>"; };
+		04C02AAA1E2F582B008F6642 /* mainFromNet.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mainFromNet.json; sourceTree = "<group>"; };
 		04E0C5BA1E1DFCC400D2D97E /* UNCarouselScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UNCarouselScrollView.swift; sourceTree = "<group>"; };
 		0E3A0D3332858039AFB69AC2 /* Pods-Uniqueuu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Uniqueuu.release.xcconfig"; path = "Pods/Target Support Files/Pods-Uniqueuu/Pods-Uniqueuu.release.xcconfig"; sourceTree = "<group>"; };
 		70108AAC0BD18CE54F8D9FAA /* Pods-Uniqueuu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Uniqueuu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Uniqueuu/Pods-Uniqueuu.debug.xcconfig"; sourceTree = "<group>"; };
@@ -358,6 +362,8 @@
 		04345A221E0677F2001BDFEF /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				04C02AA81E2F4FBD008F6642 /* main.json */,
+				04C02AAA1E2F582B008F6642 /* mainFromNet.json */,
 				04345A231E0677F2001BDFEF /* UNBaseViewController.swift */,
 				04345A241E0677F2001BDFEF /* UNNavigationController.swift */,
 				04345A251E0677F2001BDFEF /* UNTabBarController.swift */,
@@ -720,12 +726,14 @@
 				04003F3D1E15FEB70087EFAA /* YMCollectionTableViewCell.xib in Resources */,
 				04003F2F1E15F9E30087EFAA /* YMTopHeaderView.xib in Resources */,
 				04A29E9A1E06D65B00D4177F /* UNLoginViewController.xib in Resources */,
+				04C02AAB1E2F582B008F6642 /* mainFromNet.json in Resources */,
 				04AF3A4B1E05262600F60DA3 /* Assets.xcassets in Resources */,
 				0404256B1E17FA0D008F16E2 /* MainViewController.xib in Resources */,
 				04003F371E15FCE30087EFAA /* YMCollectionDetailController.xib in Resources */,
 				04345A3E1E0677F2001BDFEF /* YMHomeCell.xib in Resources */,
 				04470EFD1E0814EB00195A73 /* LaunchScreen.storyboard in Resources */,
 				04AF3A201E0523AC00F60DA3 /* Main.storyboard in Resources */,
+				04C02AA91E2F4FBD008F6642 /* main.json in Resources */,
 				047666731E1DDC7A009A9527 /* YMCollectionViewCell.xib in Resources */,
 				04270A9A1E07A4E200C22840 /* UNCollectionViewCell.xib in Resources */,
 			);

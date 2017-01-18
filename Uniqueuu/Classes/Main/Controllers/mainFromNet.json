@@ -1,0 +1,25 @@
+[
+  {
+    "imageName" : "TabBar_home_23x23_",
+    "clsName" : "UNHomeViewController",
+    "title" : "BBC6"
+  },
+  {
+    "imageName" : "TabBar_gift_23x23_",
+    "clsName" : "UNCommunityViewController",
+    "title" : "消息"
+  },
+  {
+    "clsName" : "UIViewController"
+  },
+  {
+    "imageName" : "TabBar_category_23x23_",
+    "clsName" : "UNCategoryViewController",
+    "title" : "发现"
+  },
+  {
+    "imageName" : "TabBar_me_boy_23x23_",
+    "clsName" : "UNMeViewController",
+    "title" : "我"
+  }
+]

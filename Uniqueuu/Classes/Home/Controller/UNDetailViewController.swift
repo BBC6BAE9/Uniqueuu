@@ -21,7 +21,7 @@ class UNDetailViewController: UNBaseViewController {
         webView.scalesPageToFit = true
         webView.dataDetectorTypes = .all
 //        let url = NSURL(string: homeItem!.content_url!)
-        let url = NSURL(string: "http://weibo.com/ttarticle/p/show?id=2309614044549306636969#related")
+        let url = NSURL(string: "http://www.lunanhuangshi.com/nd.jsp?id=365&_np=4_11")
         
         print(url)
         let request = NSURLRequest(url: url! as URL)

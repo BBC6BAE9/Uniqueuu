@@ -36,36 +36,7 @@ class UNTabBarController: UITabBarController {
         
     }
 
-    
-    private func addChildViewControllers() {
-        addChildViewController("UNHomeViewController", title: "首页", imageName: "TabBar_home_23x23_")
-        addChildViewController("UNCommunityViewController", title: "社区", imageName: "TabBar_gift_23x23_")
-        
-        addChildViewController("UNCommunityViewController", title: "", imageName: "")
-        
-        addChildViewController("UNCategoryViewController", title: "定制", imageName: "TabBar_category_23x23_")
-        addChildViewController("UNMeViewController", title: "我", imageName: "TabBar_me_boy_23x23_")
-    }
-    
-    
-    private func addChildViewController(_ childViewcontroller: String, title: String, imageName: String) {
-        // 动态获取命名空间
-        let ns = Bundle.main.infoDictionary!["CFBundleExecutable"] as! String
-        // 将字符串转化为类，默认情况下命名空间就是项目名称，但是命名空间可以修改
-        print(ns + "." + childViewcontroller)
-        let cls: AnyClass? = NSClassFromString(ns + "." + childViewcontroller)
-        let vcClass = cls as! UIViewController.Type
-        let vc = vcClass.init()
-        // 设置对应的数据
-        vc.tabBarItem.image = UIImage(named: imageName)
-        vc.tabBarItem.selectedImage = UIImage(named: imageName + "selected")
-        vc.title = title
-        // 给每个控制器包装一个导航控制器
-        let nav = UNNavigationController()
-        nav.addChildViewController(vc)
-        addChildViewController(nav)
-    }
-
+   
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -79,21 +50,52 @@ class UNTabBarController: UITabBarController {
 
 
 extension UNTabBarController {
-    func setupChildControllers(){
-        let array = [
-            ["clsName":"UNHomeViewController","title":"首页","imageName":"TabBar_home_23x23_"],
-            ["clsName":"UNCommunityViewController","title":"消息","imageName":"TabBar_gift_23x23_"],
-            ["clsName":"UIViewController"],
-            ["clsName":"UNCategoryViewController","title":"发现","imageName":"TabBar_category_23x23_"],
-            ["clsName":"UNMeViewController","title":"我","imageName":"TabBar_me_boy_23x23_"]
-        ]
+
+     func setupChildControllers(){
+        
+        //从bundle加载配置的json
+        //1.路径
+        //2.加载NSData
+        //3.反序列化转化成数组
+        
+        
+        //获取沙盒json路径
+        
+        
+        let docDir = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true)[0]
+        /*因为OC很多东西都改成了结构体，转换成*/
+        let jsonPath = (docDir as NSString).appendingPathComponent("main.json")
+        
+        //加载data
+        var data = NSData(contentsOfFile: jsonPath)
+        
+        
+        if data == nil {
+            
+            //从bundle加载data
+            
+            let path = Bundle.main.path(forResource: "main.json", ofType: nil)
+            
+            data = NSData(contentsOfFile: path!)
+            
+        }
+        
+        
+        
+        guard  let array = try? JSONSerialization.jsonObject(with: data as! Data, options:JSONSerialization.ReadingOptions.allowFragments)as? [[String: Any]]
+            else{
+                
+                return
+        }
+        
+      
         var arrayM = [UIViewController]()
-        for dict in array{
-            arrayM.append(controller(dict: dict))
+        for dict in array! {
+            arrayM.append(controller(dict: dict as! [String : String]))
         }
         viewControllers = arrayM
     }
-    
+
     private func controller(dict:[String:String])->UIViewController{
         
         //1.取得字典内容
@@ -108,8 +110,6 @@ extension UNTabBarController {
         }
         
         //2.创建视图控制器
-        
-        
         //系统默认的是12号字
         let vc = cls.init()
         vc.title = title
