@@ -111,6 +111,7 @@ extension AppDelegate{
             
             let docDir = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true)[0]
             /*因为OC很多东西都改成了结构体，转换成*/
+            /*实际开发的时候把这个地方换成网络加载json*/
             let jsonPath = (docDir as NSString).appendingPathComponent("main.json")
             
             data?.write(toFile: jsonPath, atomically: true)
