@@ -8,7 +8,7 @@
 * All `UITableView`/`UICollectionView`s in the app use XIBs for the cells, dynamically sized using Autolayout with [Mensa](https://github.com/jordanekay/Mensa)
 * It's the first app I've "designed" (if you can call it that) by myself! Shout out to [Sketch](http://bohemiancoding.com/sketch/) for making that easy.
 
-![Screenshot1](https://github.com/BBC6BAE9/Uniqueuu/raw/master/Screenshots/1.png)
+![Screenshot1](http://git.oschina.net/huang1937/EasyWeibo/raw/master/Screenshots/1.png)
 
 
 ### 用到的三方框架
