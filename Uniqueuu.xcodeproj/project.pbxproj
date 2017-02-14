@@ -76,10 +76,14 @@
 		04AF3A201E0523AC00F60DA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04AF3A1E1E0523AC00F60DA3 /* Main.storyboard */; };
 		04AF3A301E0523AC00F60DA3 /* UniqueuuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AF3A2F1E0523AC00F60DA3 /* UniqueuuTests.swift */; };
 		04AF3A3B1E0523AC00F60DA3 /* UniqueuuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AF3A3A1E0523AC00F60DA3 /* UniqueuuUITests.swift */; };
-		04AF3A4B1E05262600F60DA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04AF3A4A1E05262600F60DA3 /* Assets.xcassets */; };
 		04C02AA91E2F4FBD008F6642 /* main.json in Resources */ = {isa = PBXBuildFile; fileRef = 04C02AA81E2F4FBD008F6642 /* main.json */; };
 		04C02AAB1E2F582B008F6642 /* mainFromNet.json in Resources */ = {isa = PBXBuildFile; fileRef = 04C02AAA1E2F582B008F6642 /* mainFromNet.json */; };
 		04E0C5BB1E1DFCC400D2D97E /* UNCarouselScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E0C5BA1E1DFCC400D2D97E /* UNCarouselScrollView.swift */; };
+		04EBEB221E529B6000A259BE /* UNHomeToolBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04EBEB211E529B6000A259BE /* UNHomeToolBarView.xib */; };
+		04EBEB281E52A73800A259BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04EBEB271E52A73800A259BE /* Assets.xcassets */; };
+		04EBEB2A1E52A9A600A259BE /* UNHomeToolBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EBEB291E52A9A600A259BE /* UNHomeToolBarView.swift */; };
+		04EBEB3A1E52CAEE00A259BE /* YMActionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EBEB391E52CAEE00A259BE /* YMActionSheet.swift */; };
+		04EBEB3C1E52CB5B00A259BE /* YMShareButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EBEB3B1E52CB5B00A259BE /* YMShareButtonView.swift */; };
 		FBB2FA81A80D2CDF22B6BBC3 /* Pods_Uniqueuu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B652929089D0294AA1BC398 /* Pods_Uniqueuu.framework */; };
 /* End PBXBuildFile section */
 
@@ -190,10 +194,14 @@
 		04AF3A361E0523AC00F60DA3 /* UniqueuuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UniqueuuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04AF3A3A1E0523AC00F60DA3 /* UniqueuuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniqueuuUITests.swift; sourceTree = "<group>"; };
 		04AF3A3C1E0523AC00F60DA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04AF3A4A1E05262600F60DA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04C02AA81E2F4FBD008F6642 /* main.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main.json; sourceTree = "<group>"; };
 		04C02AAA1E2F582B008F6642 /* mainFromNet.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mainFromNet.json; sourceTree = "<group>"; };
 		04E0C5BA1E1DFCC400D2D97E /* UNCarouselScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UNCarouselScrollView.swift; sourceTree = "<group>"; };
+		04EBEB211E529B6000A259BE /* UNHomeToolBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UNHomeToolBarView.xib; sourceTree = "<group>"; };
+		04EBEB271E52A73800A259BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04EBEB291E52A9A600A259BE /* UNHomeToolBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UNHomeToolBarView.swift; sourceTree = "<group>"; };
+		04EBEB391E52CAEE00A259BE /* YMActionSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YMActionSheet.swift; sourceTree = "<group>"; };
+		04EBEB3B1E52CB5B00A259BE /* YMShareButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YMShareButtonView.swift; sourceTree = "<group>"; };
 		0E3A0D3332858039AFB69AC2 /* Pods-Uniqueuu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Uniqueuu.release.xcconfig"; path = "Pods/Target Support Files/Pods-Uniqueuu/Pods-Uniqueuu.release.xcconfig"; sourceTree = "<group>"; };
 		70108AAC0BD18CE54F8D9FAA /* Pods-Uniqueuu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Uniqueuu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Uniqueuu/Pods-Uniqueuu.debug.xcconfig"; sourceTree = "<group>"; };
 		9B652929089D0294AA1BC398 /* Pods_Uniqueuu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Uniqueuu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -322,7 +330,11 @@
 		04345A191E0677F2001BDFEF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				04EBEB3B1E52CB5B00A259BE /* YMShareButtonView.swift */,
+				04EBEB391E52CAEE00A259BE /* YMActionSheet.swift */,
 				04E0C5BA1E1DFCC400D2D97E /* UNCarouselScrollView.swift */,
+				04EBEB291E52A9A600A259BE /* UNHomeToolBarView.swift */,
+				04EBEB211E529B6000A259BE /* UNHomeToolBarView.xib */,
 				04345A1A1E0677F2001BDFEF /* UNHomeCell.swift */,
 				04345A1B1E0677F2001BDFEF /* YMHomeCell.swift */,
 				04345A1C1E0677F2001BDFEF /* YMHomeCell.xib */,
@@ -543,6 +555,7 @@
 			children = (
 				04AF3A191E0523AC00F60DA3 /* Uniqueuu */,
 				049F17121E29EB5400120BF0 /* Uniqueuu-Bridging-header.h */,
+				04EBEB271E52A73800A259BE /* Assets.xcassets */,
 				04AF3A2E1E0523AC00F60DA3 /* UniqueuuTests */,
 				04AF3A391E0523AC00F60DA3 /* UniqueuuUITests */,
 				04AF3A181E0523AC00F60DA3 /* Products */,
@@ -568,7 +581,6 @@
 				04AF3A1E1E0523AC00F60DA3 /* Main.storyboard */,
 				04470EFC1E0814EB00195A73 /* LaunchScreen.storyboard */,
 				04345A291E0677F2001BDFEF /* Others */,
-				04AF3A4A1E05262600F60DA3 /* Assets.xcassets */,
 				04345A4E1E0678F7001BDFEF /* Info.plist */,
 			);
 			path = Uniqueuu;
@@ -722,12 +734,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04EBEB221E529B6000A259BE /* UNHomeToolBarView.xib in Resources */,
 				04003F331E15FBBF0087EFAA /* YMCategoryCollectionViewCell.xib in Resources */,
 				04003F3D1E15FEB70087EFAA /* YMCollectionTableViewCell.xib in Resources */,
 				04003F2F1E15F9E30087EFAA /* YMTopHeaderView.xib in Resources */,
 				04A29E9A1E06D65B00D4177F /* UNLoginViewController.xib in Resources */,
 				04C02AAB1E2F582B008F6642 /* mainFromNet.json in Resources */,
-				04AF3A4B1E05262600F60DA3 /* Assets.xcassets in Resources */,
 				0404256B1E17FA0D008F16E2 /* MainViewController.xib in Resources */,
 				04003F371E15FCE30087EFAA /* YMCollectionDetailController.xib in Resources */,
 				04345A3E1E0677F2001BDFEF /* YMHomeCell.xib in Resources */,
@@ -735,6 +747,7 @@
 				04AF3A201E0523AC00F60DA3 /* Main.storyboard in Resources */,
 				04C02AA91E2F4FBD008F6642 /* main.json in Resources */,
 				047666731E1DDC7A009A9527 /* YMCollectionViewCell.xib in Resources */,
+				04EBEB281E52A73800A259BE /* Assets.xcassets in Resources */,
 				04270A9A1E07A4E200C22840 /* UNCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -818,9 +831,11 @@
 				04003F2B1E15F8610087EFAA /* YMCollection.swift in Sources */,
 				04A144671E079D8C00870F19 /* UNProductViewController.swift in Sources */,
 				049F16FE1E29E29000120BF0 /* UILabel+CZAddition.m in Sources */,
+				04EBEB3C1E52CB5B00A259BE /* YMShareButtonView.swift in Sources */,
 				04345A441E0677F2001BDFEF /* UNConst.swift in Sources */,
 				04345A491E0677F2001BDFEF /* UNMessageViewController.swift in Sources */,
 				049F16FB1E29E29000120BF0 /* NSString+CZPath.m in Sources */,
+				04EBEB3A1E52CAEE00A259BE /* YMActionSheet.swift in Sources */,
 				045999E71E1796C1008E8911 /* YMVerticalButton.swift in Sources */,
 				049F16FC1E29E29000120BF0 /* UIButton+CZAddition.m in Sources */,
 				04270A9C1E07A65B00C22840 /* YMSearchResult.swift in Sources */,
@@ -850,6 +865,7 @@
 				049F16F71E29E29000120BF0 /* NSAttributedString+CZAdditon.m in Sources */,
 				04345A461E0677F2001BDFEF /* AppDelegate.swift in Sources */,
 				04345A4D1E0677F2001BDFEF /* UNMineHeaderView.swift in Sources */,
+				04EBEB2A1E52A9A600A259BE /* UNHomeToolBarView.swift in Sources */,
 				04345A481E0677F2001BDFEF /* UNMeChoiceView.swift in Sources */,
 				045999ED1E17BF59008E8911 /* UNCommunityViewController.swift in Sources */,
 				04A29E941E06D42100D4177F /* UNRegisterViewController.swift in Sources */,
@@ -1015,7 +1031,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hh.Uniqueuu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/mac/Desktop/Uniqueuu/Uniqueuu/Uniqueuu-Bridging-header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/mac/Uniqueuu/Uniqueuu/Uniqueuu-Bridging-header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -1031,7 +1047,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hh.Uniqueuu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/mac/Desktop/Uniqueuu/Uniqueuu/Uniqueuu-Bridging-header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/mac/Uniqueuu/Uniqueuu/Uniqueuu-Bridging-header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
