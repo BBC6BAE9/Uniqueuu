@@ -8,6 +8,45 @@ PODS:
   - SSKeychain (1.4.1)
   - SVProgressHUD (2.0.4)
   - SwiftyJSON (2.3.2)
+  - UMengUShare/Core (6.2.2):
+    - UMengUShare/Network
+  - UMengUShare/Network (6.2.2)
+  - UMengUShare/Plugin/IDFA (6.2.2):
+    - UMengUShare/Core
+  - UMengUShare/Social/AlipayShare (6.2.2):
+    - UMengUShare/Core
+  - UMengUShare/Social/DingDing (6.2.2):
+    - UMengUShare/Core
+  - UMengUShare/Social/Email (6.2.2):
+    - UMengUShare/Core
+  - UMengUShare/Social/EverNote (6.2.2):
+    - UMengUShare/Core
+  - UMengUShare/Social/Facebook (6.2.2):
+    - UMengUShare/Core
+  - UMengUShare/Social/Flickr (6.2.2):
+    - UMengUShare/Core
+  - UMengUShare/Social/GooglePlus (6.2.2):
+    - UMengUShare/Core
+  - UMengUShare/Social/Line (6.2.2):
+    - UMengUShare/Core
+  - UMengUShare/Social/Linkedin (6.2.2):
+    - UMengUShare/Core
+  - UMengUShare/Social/QQ (6.2.2):
+    - UMengUShare/Core
+  - UMengUShare/Social/Sina (6.2.2):
+    - UMengUShare/Core
+  - UMengUShare/Social/SMS (6.2.2):
+    - UMengUShare/Core
+  - UMengUShare/Social/Twitter (6.2.2):
+    - UMengUShare/Core
+  - UMengUShare/Social/WeChat (6.2.2):
+    - UMengUShare/Core
+  - UMengUShare/Social/WhatsApp (6.2.2):
+    - UMengUShare/Core
+  - UMengUShare/Social/YouDao (6.2.2):
+    - UMengUShare/Core
+  - UMengUShare/UI (6.2.2):
+    - UMengUShare/Core
 
 DEPENDENCIES:
   - Alamofire (~> 4.0.0)
@@ -17,6 +56,24 @@ DEPENDENCIES:
   - SnapKit (~> 3.0.0)
   - SVProgressHUD
   - SwiftyJSON (from `https://github.com/acegreen/SwiftyJSON.git`, branch `swift3`)
+  - UMengUShare/Plugin/IDFA
+  - UMengUShare/Social/AlipayShare
+  - UMengUShare/Social/DingDing
+  - UMengUShare/Social/Email
+  - UMengUShare/Social/EverNote
+  - UMengUShare/Social/Facebook
+  - UMengUShare/Social/Flickr
+  - UMengUShare/Social/GooglePlus
+  - UMengUShare/Social/Line
+  - UMengUShare/Social/Linkedin
+  - UMengUShare/Social/QQ
+  - UMengUShare/Social/Sina
+  - UMengUShare/Social/SMS
+  - UMengUShare/Social/Twitter
+  - UMengUShare/Social/WeChat
+  - UMengUShare/Social/WhatsApp
+  - UMengUShare/Social/YouDao
+  - UMengUShare/UI
 
 EXTERNAL SOURCES:
   SwiftyJSON:
@@ -37,7 +94,8 @@ SPEC CHECKSUMS:
   SSKeychain: 55cc80f66f5c73da827e3077f02e43528897db41
   SVProgressHUD: bfde85ed6c573ea802b9cb37894ed9b629034f1b
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
+  UMengUShare: fc0a98b8d5297632e82874318fd72a10d17da228
 
-PODFILE CHECKSUM: 8601a40234216ff970f85d087eb786af0aa804fb
+PODFILE CHECKSUM: 46436a3db52af124c0a238b451461a41a5028274
 
 COCOAPODS: 1.2.0.beta.1
