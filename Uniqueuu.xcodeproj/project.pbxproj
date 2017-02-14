@@ -1027,9 +1027,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = U3Z8K685BU;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Uniqueuu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = hh.Uniqueuu;
+				PRODUCT_BUNDLE_IDENTIFIER = linkling.master.CollectionViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/mac/Uniqueuu/Uniqueuu/Uniqueuu-Bridging-header.h";
 				SWIFT_VERSION = 3.0;
@@ -1043,9 +1044,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = U3Z8K685BU;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Uniqueuu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = hh.Uniqueuu;
+				PRODUCT_BUNDLE_IDENTIFIER = linkling.master.CollectionViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/mac/Uniqueuu/Uniqueuu/Uniqueuu-Bridging-header.h";
 				SWIFT_VERSION = 3.0;
