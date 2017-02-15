@@ -66,5 +66,9 @@ pod "SwiftyJSON", :git => "https://github.com/acegreen/SwiftyJSON.git", :branch 
     # 加入IDFA获取
     pod ‘UMengUShare/Plugin/IDFA'
 
+    # 标准SDK，含IDFA用于统计信息
+   pod 'UMengAnalytics'
+
+
 end
 
