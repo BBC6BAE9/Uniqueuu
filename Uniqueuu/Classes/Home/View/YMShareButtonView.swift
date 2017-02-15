@@ -57,24 +57,24 @@ class YMShareButtonView: UIView {
     @objc func shareButtonClick(button: UIButton) {
         if let shareButtonType = YMShareButtonType(rawValue: button.tag) {
             switch shareButtonType {
-            case .WeChatTimeline:shareWebPageToPlatformType(platformType: .wechatTimeLine  )
-                
+            case .WeChatTimeline:shareWebPageToPlatformType(platformType: .wechatTimeLine)
                 break
-            case .WeChatSession: shareWebPageToPlatformType(platformType: .wechatSession  )
                 
+            case .WeChatSession: shareWebPageToPlatformType(platformType: .wechatSession)
                 break
+                
             case .Weibo:
-                
                 break
+                
             case .QZone:
-                
                 break
+                
             case .QQFriends:
-                
                 break
+                
             case .CopyLink:
-                
                 break
+                
             }
         }
         print(button.titleLabel!.text!)
@@ -83,7 +83,7 @@ class YMShareButtonView: UIView {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-
+    
     
     func shareWebPageToPlatformType(platformType:UMSocialPlatformType) {
         
@@ -94,8 +94,8 @@ class YMShareButtonView: UIView {
         let thumbURL = "https://mobile.umeng.com/images/pic/home/social/img-1.png"
         
         let shareObject: UMShareWebpageObject = UMShareWebpageObject.shareObject(withTitle: "欢迎使用【读物】APP,页面由本世纪最帅程序员huanghong提供",
-                        descr: "本页面由本世纪最帅的程序员BBC6BAE9提供",
-                        thumImage: thumbURL)
+                                                                                 descr: "本页面由本世纪最帅的程序员BBC6BAE9提供",
+                                                                                 thumImage: thumbURL)
         
         //设置网页地址
         shareObject.webpageUrl = "http://www.jianshu.com/p/0778bc56aa47"
@@ -106,57 +106,57 @@ class YMShareButtonView: UIView {
         UMSocialManager.default().share(to: platformType, messageObject: messageObject, currentViewController: self) { (data, error) in
             
             if (error != nil) {
-            print("分享出错了\(error)")
-            
+                print("分享出错了\(error)")
+                
             }else{
-            print("分享信息\(data)")
-            
+                print("分享信息\(data)")
+                
             }
         }
-    
-    
-    
+        
+        
+        
     }
     
-//    - (void)shareWebPageToPlatformType:(UMSocialPlatformType)platformType
-//    {
-//    //创建分享消息对象
-//    UMSocialMessageObject *messageObject = [UMSocialMessageObject messageObject];
-//    
-//    //创建网页内容对象
-//    NSString* thumbURL =  @"https://mobile.umeng.com/images/pic/home/social/img-1.png";
-//    UMShareWebpageObject *shareObject = [UMShareWebpageObject shareObjectWithTitle:@"欢迎使用【友盟+】社会化组件U-Share" descr:@"欢迎使用【友盟+】社会化组件U-Share，SDK包最小，集成成本最低，助力您的产品开发、运营与推广！" thumImage:thumbURL];
-//    //设置网页地址
-//    shareObject.webpageUrl = @"http://mobile.umeng.com/social";
-//    
-//    //分享消息对象设置分享内容对象
-//    messageObject.shareObject = shareObject;
-//    
-//    //调用分享接口
-//    [[UMSocialManager defaultManager] shareToPlatform:platformType messageObject:messageObject currentViewController:self completion:^(id data, NSError *error) {
-//    if (error) {
-//    UMSocialLogInfo(@"************Share fail with error %@*********",error);
-//    }else{
-//    if ([data isKindOfClass:[UMSocialShareResponse class]]) {
-//    UMSocialShareResponse *resp = data;
-//    //分享结果消息
-//    UMSocialLogInfo(@"response message is %@",resp.message);
-//    //第三方原始返回的数据
-//    UMSocialLogInfo(@"response originalResponse data is %@",resp.originalResponse);
-//    
-//    }else{
-//    UMSocialLogInfo(@"response data is %@",data);
-//    }
-//    }
-//    [self alertWithError:error];
-//    }];
-//    }
-//    
-
-
-
-   
-
+    //    - (void)shareWebPageToPlatformType:(UMSocialPlatformType)platformType
+    //    {
+    //    //创建分享消息对象
+    //    UMSocialMessageObject *messageObject = [UMSocialMessageObject messageObject];
+    //
+    //    //创建网页内容对象
+    //    NSString* thumbURL =  @"https://mobile.umeng.com/images/pic/home/social/img-1.png";
+    //    UMShareWebpageObject *shareObject = [UMShareWebpageObject shareObjectWithTitle:@"欢迎使用【友盟+】社会化组件U-Share" descr:@"欢迎使用【友盟+】社会化组件U-Share，SDK包最小，集成成本最低，助力您的产品开发、运营与推广！" thumImage:thumbURL];
+    //    //设置网页地址
+    //    shareObject.webpageUrl = @"http://mobile.umeng.com/social";
+    //
+    //    //分享消息对象设置分享内容对象
+    //    messageObject.shareObject = shareObject;
+    //
+    //    //调用分享接口
+    //    [[UMSocialManager defaultManager] shareToPlatform:platformType messageObject:messageObject currentViewController:self completion:^(id data, NSError *error) {
+    //    if (error) {
+    //    UMSocialLogInfo(@"************Share fail with error %@*********",error);
+    //    }else{
+    //    if ([data isKindOfClass:[UMSocialShareResponse class]]) {
+    //    UMSocialShareResponse *resp = data;
+    //    //分享结果消息
+    //    UMSocialLogInfo(@"response message is %@",resp.message);
+    //    //第三方原始返回的数据
+    //    UMSocialLogInfo(@"response originalResponse data is %@",resp.originalResponse);
+    //    
+    //    }else{
+    //    UMSocialLogInfo(@"response data is %@",data);
+    //    }
+    //    }
+    //    [self alertWithError:error];
+    //    }];
+    //    }
+    //    
+    
+    
+    
+    
+    
     
     
 }
