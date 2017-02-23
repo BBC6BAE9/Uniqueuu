@@ -119,7 +119,7 @@ private class YMNewfeatureCell: UICollectionViewCell {
 
 private class YMNewfeatureLayout: UICollectionViewFlowLayout {
     /// 准备布局
-    private override func prepare() {
+    override func prepare() {
         // 设置 layout 布局
         itemSize = UIScreen.main.bounds.size
         minimumLineSpacing = 0
